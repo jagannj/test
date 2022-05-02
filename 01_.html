@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas>
+
+    </canvas>
+    <script>
+        const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+const x = 40;
+const y = 60;
+const width = 100;
+const height = 55;
+const color = 'orange';
+
+function drawSquare(x, y, width, height, color) {
+  ctx.fillStyle = 'yellow';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, width, height);
+}
+
+drawSquare(x, y, width, height, color);
+    </script>
+    
+</body>
+</html>
